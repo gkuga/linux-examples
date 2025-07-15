@@ -2,7 +2,6 @@
 make
 sudo insmod dummy.ko
 
-# sudo su
+echo hello | sudo tee /dev/dummy0
 dmesg | tail
-echo "hello" > /dev/dummy1
 ```
